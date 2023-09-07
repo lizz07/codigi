@@ -12,7 +12,7 @@ import Insert from './Componentes/cotizaciones/Insert';
 import Eliminar from './Componentes/cotizaciones/Eliminar';
 import Update from './Componentes/cotizaciones/Update';
 //Rutas para muebles
-import Actualizar from './Componentes/cotizaciones/Actualizar';
+import Actualizar from './Componentes/mueble/Actualizar';
 import Hacer from './Componentes/mueble/Hacer';
 import Leer from './Componentes/mueble/Leer';
 import Quitar from './Componentes/mueble/Quitar';
