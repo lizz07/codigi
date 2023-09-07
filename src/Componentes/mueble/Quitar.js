@@ -1,10 +1,10 @@
 import React, { useState } from 'react';
-import Delete from './Delete';
+import Borrar from './Borrar';
 import '../../css/style.css'
 import { Link } from "react-router-dom";
 import Logo_dasaga_white from '../../img/Logo_dasaga_white.png';
 
-function Eliminar() {
+function Quitar() {
     const [setDataUpdated] = useState(false);
 
     const handleDataUpdate = () => {
@@ -48,11 +48,11 @@ function Eliminar() {
         </div>
       </div>
             <div className='bg-gray'>
-                <Delete onDataUpdated={handleDataUpdate} />
+                <Borrar onDataUpdated={handleDataUpdate} />
             </div>
         </div>
     </div>
     );
 }
 
-export default Eliminar;
+export default Quitar;

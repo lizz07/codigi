@@ -1,0 +1,17 @@
+{
+  "files": {
+    "main.css": "/api.github.io/static/css/main.ea15638b.css",
+    "main.js": "/api.github.io/static/js/main.9ad22fa0.js",
+    "static/js/787.18fa16a3.chunk.js": "/api.github.io/static/js/787.18fa16a3.chunk.js",
+    "static/media/fondo.jpg": "/api.github.io/static/media/fondo.2d4e86585134b2ee8bdf.jpg",
+    "static/media/Logo_dasaga_white.png": "/api.github.io/static/media/Logo_dasaga_white.a6720f012db5ebc01225.png",
+    "index.html": "/api.github.io/index.html",
+    "main.ea15638b.css.map": "/api.github.io/static/css/main.ea15638b.css.map",
+    "main.9ad22fa0.js.map": "/api.github.io/static/js/main.9ad22fa0.js.map",
+    "787.18fa16a3.chunk.js.map": "/api.github.io/static/js/787.18fa16a3.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.ea15638b.css",
+    "static/js/main.9ad22fa0.js"
+  ]
+}

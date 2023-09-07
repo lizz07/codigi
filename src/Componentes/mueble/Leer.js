@@ -1,11 +1,11 @@
 import React, { useState } from 'react';
-import Delete from './Delete';
+import Consultar from './Consultar';
 import '../../css/style.css'
 import { Link } from "react-router-dom";
 import Logo_dasaga_white from '../../img/Logo_dasaga_white.png';
 
-function Eliminar() {
-    const [setDataUpdated] = useState(false);
+function Leer() {
+    const [dataUpdated, setDataUpdated] = useState(false);
 
     const handleDataUpdate = () => {
         setDataUpdated(true);
@@ -19,9 +19,9 @@ function Eliminar() {
         <div className="menu">
             <li className="menu"><i class="fa fa-book"></i> Gestión Cotizacion <span class="fa fa-chevron-right"></span>
                 <ul className="submenu">
-                <li><Link to={'/ConC'}><a type="submit">Consultar Cotizacion</a></Link></li>
-                  <li><Link to={'/CI'}><a type="submit">Agregar Cotizacion</a></Link></li>
-                  <li><Link to={'/CU'}><a type="submit">Actualizar cotizacion</a></Link></li>   
+                  <li><Link to={'/ConC'}><a type="submit">Consultar cotizaciones</a></Link></li>
+                  <li><Link to={'/CI'}><a type="submit">Agregar cotizacion</a></Link></li>
+                  <li><Link to={'/CU'}><a type="submit">Actualizar cotizacion</a></Link></li>    
                 </ul>
             </li>
             <li className="menu"><i class="fa fa-book"></i> Gestión Mueble <span class="fa fa-chevron-right"></span>
@@ -33,8 +33,8 @@ function Eliminar() {
             </li>
             <li className="menu"><i class="fa fa-edit"></i> Gestión Usuario <span class="fa fa-chevron-right"></span>
               <ul className="submenu">
-              <li><a href="Controlador.php?ruta=listarUsuario&pag=0">Lista de usuarios</a></li>
-                <li><a href="Controlador.php?ruta=mostrarEliminarUsuario">Agregar usuario</a></li>
+                  <li><a href="Controlador.php?ruta=listarUsuario&pag=0">Lista de usuarios</a></li>
+                  <li><a href="Controlador.php?ruta=mostrarInsertarUsuario">Agregar usuario</a></li>
               </ul>
             </li>
           <li className="menu"><i class="fa fa-table"></i> Gestión Accesorio <span class="fa fa-chevron-right"></span>
@@ -48,11 +48,12 @@ function Eliminar() {
         </div>
       </div>
             <div className='bg-gray'>
-                <Delete onDataUpdated={handleDataUpdate} />
+                <Consultar dataUpdated={dataUpdated} />
             </div>
+            <li><Link className="orange-btn" to={'/CmD'}><a type="submit">Eliminar Mueble</a></Link></li>
         </div>
     </div>
     );
 }
 
-export default Eliminar;
+export default Leer;

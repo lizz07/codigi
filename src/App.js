@@ -11,6 +11,11 @@ import READ from './Componentes/cotizaciones/READ';
 import Insert from './Componentes/cotizaciones/Insert';
 import Eliminar from './Componentes/cotizaciones/Eliminar';
 import Update from './Componentes/cotizaciones/Update';
+//Rutas para muebles
+import Actualizar from './Componentes/cotizaciones/Actualizar';
+import Hacer from './Componentes/mueble/Hacer';
+import Leer from './Componentes/mueble/Leer';
+import Quitar from './Componentes/mueble/Quitar';
 function App() {
     return(
 		<div>
@@ -27,6 +32,10 @@ function App() {
 				<Route path='/CI' element={<Insert />}/>
 				<Route path='/CE' element={<Eliminar />}/>
 				<Route path='/CU' element={<Update />}/>
+				<Route path='/CM' element={<Actualizar />}/>
+				<Route path='/CmA' element={<Hacer />}/>
+				<Route path='/CmC' element={<Leer />}/>
+				<Route path='/CmD' element={<Quitar />}/>
 				</Routes>
 			</BrowserRouter>
 		</div>

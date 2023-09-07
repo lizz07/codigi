@@ -24,6 +24,13 @@ function Agregar() {
                   <li><Link to={'/CU'}><a type="submit">Actualizar cotizacion</a></Link></li>  
             </ul>
             </li>
+            <li className="menu"><i class="fa fa-book"></i> Gestión Mueble <span class="fa fa-chevron-right"></span>
+                <ul className="submenu">
+                  <li><Link to={'/CmC'}><a type="submit">Consultar muebles</a></Link></li>
+                  <li><Link to={'/CmA'}><a type="submit">Agregar mueble</a></Link></li>
+                  <li><Link to={'/CM'}><a type="submit">Actualizar mueble</a></Link></li>  
+                </ul>
+            </li>
             <li className="menu"><i class="fa fa-edit"></i> Gestión Usuario <span class="fa fa-chevron-right"></span>
               <ul className="submenu">
                   <li><a href="Controlador.php?ruta=listarUsuario&pag=0">Lista de usuarios</a></li>
